@@ -3,7 +3,7 @@ import axios from "axios";
 const createShortUrl = async (body, authorizationToken) => {
   try {
     const response = await axios.post(
-      "http://localhost:5000/api/urlPrivate/createShortUrl",
+      "https://shortlinkerz.vercel.app/api/urlPrivate/createShortUrl",
       body,
       {
         headers: {

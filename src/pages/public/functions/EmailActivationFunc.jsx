@@ -3,7 +3,7 @@ import axios from "axios";
 const EmailActivationFunc = async (body) => {
   try {
     const response = await axios.post(
-      "http://localhost:5000/api/auth/emailActivation",
+      "https://shortlinkerz.vercel.app/api/auth/emailActivation",
       body
     );
     return response;

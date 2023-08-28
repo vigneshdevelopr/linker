@@ -3,7 +3,7 @@ import axios from "axios";
 const ResetPasswordFunc = async (body, authorizationToken) => {
   try {
     const response = await axios.post(
-      "http://localhost:5000/api/auth/reset-password",
+      "https://shortlinkerz.vercel.app/api/auth/reset-password",
       body,
       {
         headers: {
