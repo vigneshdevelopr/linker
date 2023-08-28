@@ -69,6 +69,9 @@ function App() {
               </Protected>
             }
           />
+          <Route path="**" element={
+            <h1>You Lost Your Way</h1>
+          } />
         </Routes>
 
         <ToastContainer />
