@@ -3,7 +3,7 @@ import axios from "axios";
 const ResetPasswordFunc = async (body, authorizationToken) => {
   try {
     const response = await axios.post(
-      process.env.REACT_APP_RESETPASSWORD_API,
+      "http://localhost:5000/api/auth/reset-password",
       body,
       {
         headers: {

@@ -2,7 +2,7 @@ import axios from "axios";
 
 const getAllUrlData = async (authorizationToken) => {
   try {
-    const response = await axios.get(process.env.REACT_APP_GET_ALLURL_API, {
+    const response = await axios.get("http://localhost:5000/api/urlPrivate/getAll", {
       headers: {
         Authorization: `BEARER ${authorizationToken}`,
       },

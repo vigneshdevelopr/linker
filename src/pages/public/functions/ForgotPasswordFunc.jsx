@@ -3,7 +3,7 @@ import axios from "axios";
 const ForgotPasswordFunc = async (body) => {
   try {
     const response = await axios.post(
-      process.env.REACT_APP_FORGOTPASSWORD_API,
+      "http://localhost:5000/api/auth/forgot-password",
       body
     );
     return response;

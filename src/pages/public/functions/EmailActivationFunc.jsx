@@ -3,7 +3,7 @@ import axios from "axios";
 const EmailActivationFunc = async (body) => {
   try {
     const response = await axios.post(
-      process.env.REACT_APP_EMAILACTIVATION_API,
+      "http://localhost:5000/api/auth/emailActivation",
       body
     );
     return response;
